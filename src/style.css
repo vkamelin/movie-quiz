@@ -29,6 +29,10 @@ body {
     min-height: 100vh;
 }
 
+#app {
+    @apply min-h-screen;
+}
+
 a {
     text-decoration: none;
 }
