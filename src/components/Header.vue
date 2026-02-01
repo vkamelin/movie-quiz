@@ -1,7 +1,8 @@
 <template>
   <header class="header">
     <nav>
-      <RouterLink to="/">Игра</RouterLink>
+      <RouterLink to="/">Главная</RouterLink>
+      <RouterLink to="/quiz">Игра</RouterLink>
       <RouterLink to="/leaderboard">Лидеры</RouterLink>
     </nav>
   </header>
@@ -14,7 +15,7 @@
 @reference "tailwindcss";
 
 .header {
-  @apply flex justify-between items-center border-b border-b-white/25 h-16 px-4;
+  @apply flex justify-between items-center border-b border-b-white/25 h-16 px-4 w-full;
 }
 
 .header .avatar {
@@ -22,7 +23,7 @@
 }
 
 .header nav {
-  @apply flex justify-center items-center gap-4;
+  @apply flex justify-center items-center gap-4 w-full;
 }
 
 .header nav a {
